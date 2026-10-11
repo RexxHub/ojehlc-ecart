@@ -193,7 +193,7 @@ function App() {
       {view === "orders" && me && <Orders me={me} />}
       {view === "admin" && me?.role === "admin" && <Admin />}
     </main>
-    <footer>© {new Date().getFullYear()} OJEHLC E-CART</footer>
+    <footer>Built by {new Date().getFullYear()} REXX HUB</footer>
     {cartOpen && <Cart cart={cart} setCart={setCart} close={() => setCartOpen(false)} checkout={() => { setCartOpen(false); go("checkout"); }} />}
     {auth && <Auth close={() => setAuth(false)} />}
   </>;
